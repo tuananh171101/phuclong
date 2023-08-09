@@ -1,0 +1,300 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+    vertical-align: baseline;
+}
+body{
+    color: #171717;
+}
+.icon .gray{
+    background-image:url("img/icon_tealeaves.png");
+}
+.breadcrumb > li {
+    display: inline-block;
+}
+.breadcrumb{
+    color: #B2B2B2;
+}
+.breadcrumb > .active {
+    color: #777;
+}
+.breadcrumb > li + li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "/\00a0";
+}
+
+h1{
+    font-size: 40px;
+    margin-top:18px;
+    margin-bottom:10px;
+    text-transform: uppercase;
+    color: #0C713D;
+    font-family: 'Lora';
+}
+.icon:before {
+    left: 0;
+    right: 65%;
+}   
+.icon:after {
+    left: 65%;
+    right: 0;
+}
+.icon:before, .separator-icon:after {
+    content: "";
+    position: absolute;
+    height: 0.5px;
+    background: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.icon {
+    background: url("img/icon_tealeaves.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    width: 300px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.page-heading ul.menu {
+    margin: 30px 0;
+    padding: 0;
+    display: flex; 
+    justify-content: center; 
+}
+
+.page-heading ul.menu li {
+    margin-right: 20px; /* Add spacing between menu items */
+}
+
+@media only screen and (max-width: 767px){
+    .page-heading ul.menu li {
+        display: block;
+        margin: 10px 0; /* Adjust spacing for smaller screens */
+    }
+    .nav .nav-tabs .menu{
+        display: block;
+        font-size: 18px; /* Adjust font size */
+        color: #555;
+        line-height: 40px;
+        text-transform: uppercase;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+        text-align: center;
+        padding: 0 15px; /* Adjust padding */
+        }
+}
+
+.page-heading ul.menu li {
+    float: none;
+}
+
+a{
+    text-decoration: none;
+    color:#333;
+    transition: all 0.2s linear;
+    color: inherit;
+}
+.page-heading {
+    padding: 10px 0;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+    vertical-align: baseline;
+}
+/* Column styling for larger screens */
+.col-ct-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 15px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 17px;
+    padding: 0px 15px;
+}
+introduce .intro_info {
+    margin-top: 20px;
+    max-width: 970px;
+    margin: 60px auto 0;
+}
+
+/* Flex container for layout */
+.container{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+/* Introduce section styling */
+.introduce {
+    margin-bottom: 50px;
+}
+
+/* Tab content styling */
+.tab-content {
+    background-color: #fff;
+}
+
+/* Form group styling */
+.content_fields .form-group {
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.page-heading ul.menu a {
+    display: block;
+    font-size: 22px;
+    color: #797979;
+    line-height: 40px;
+    text-transform: uppercase;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    text-align: center;
+    padding: 0 25px;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 767px) {
+    .content_fields .form-group {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+}
+
+/* Media query for larger screens */
+@media screen and (min-width: 768px) {
+    .item-right {
+        flex-direction: row-reverse;    /* Image on the right, text on the left */
+
+    }
+    .form-group{
+        display:flex;
+        margin: 50px;
+        align-items: center;
+
+    }
+
+
+    .content_fields .form-group h3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 0 15px;
+    }
+
+    .content_fields .form-group img {
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 0 15px;
+        height: auto;
+    }
+}
+@media screen and (min-width:1200px){
+    
+    .container{
+        width:1170px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
+    border-radius:4px;
+    vertical-align: middle;
+}
+
+
+
+
+.category-product {
+    overflow: hidden;
+}
+
+.category-product .cat-item .cat-img img {
+    max-width: 285px;
+    box-shadow: -4px -4px 8px 0 rgba(205, 205, 205, 0.5), 4px 4px 8px 0 rgba(205, 205, 205, 0.5);
+    border-radius: 50%;
+    margin: 60px;
+    background: #fff;
+    margin-left: 100px;
+    padding: 20px 0;
+}
+.category-product .cat-item .cat-content .description {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #323232;
+    line-height: 34px;
+}
+.category-product .cat-item .cat-content .title {
+    font-size: 32px;
+    text-transform: uppercase;
+    font-family: 'Muli', sans-serif;
+    margin-bottom: 35px;
+    position: relative;
+}
+.category-product .item-wrapper {
+    position: relative;
+   
+}
+.category-product .cat-item .cat-img {
+    background-image: url("img/bg_category_tea.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+@media only screen and (max-width: 991px){
+.category-product .cat-item .cat-img img {
+    max-width: 250px;
+}
+}
+.category-product .cat-item.thumbright .cat-img {
+    float: right; /* đưa item sang bên phải */
+  
+}
+.category-product .cat-item.thumbleft .cat-img {
+    float: left; /* đưa item sang bên phải */
+  
+}
+
+
+.btn {
+    font-family: 'Muli', sans-serif;
+    transition: all 0.2s linear;
+    text-transform: uppercase;
+    overflow: hidden;
+    position: relative;
+    color: white;
+    font-size: 13px;
+    padding: 7px 12px;
+    border : 1px pink solid;
+    border-radius: 6px;
+}
+.f-bot .f_follow button, .btn-primary {
+    color: #0C713D;
+    background-color: #fff;
+}
+
+.category-product .cat-item .cat-img {
+    background-image: url("img/bg_category_tea.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.category-product .cat-item {
+    overflow: hidden;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
