@@ -137,6 +137,10 @@ introduce .intro_info {
 .introduce {
     margin-bottom: 50px;
 }
+.btn-primary:hover {
+    color: #fff;
+    background-color:#FF9B9B;
+}
 
 /* Tab content styling */
 .tab-content {
